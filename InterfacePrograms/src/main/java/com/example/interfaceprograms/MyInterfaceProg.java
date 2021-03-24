@@ -19,9 +19,9 @@ public class MyInterfaceProg {
         }
 
         private static double average (Country[] objects) {
-            if (objects.length==0) ( return 0; )
+            if (objects.length==0) { return 0; }
             double sum = 0;
-            for (BankAccount obj : objects) {
+            for (Measureable obj : objects) {
                 sum = sum  + obj.getBalance();
             }
             return sum / objects.length;
@@ -31,10 +31,10 @@ public class MyInterfaceProg {
     }
 
     private static double average(BankAccount[] objects) {
-        if (objects.length==0) ( return 0; )
+        if (objects.length==0) { return 0; }
         double sum = 0;
         for (BankAccount obj : objects) {
-            sum = sum  + obj.getBalance();
+            sum = sum  + obj.getMeasure();
         }
         return sum / objects.length;
 
